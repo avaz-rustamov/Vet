@@ -398,6 +398,7 @@ padding: 15px 47px;
   color: var(--black);
   font-size: 20px;
   line-height: 26px;
+  padding-bottom: 100px;
 }
 
 
@@ -407,12 +408,13 @@ padding: 15px 47px;
   background-image: url(../img/sub-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 88px;
 
 }
 .subscription {
   position: relative;
+
 
 }
 .subscription__heading {
@@ -441,6 +443,15 @@ padding: 15px 47px;
   border: 1px solid #ccc;
   outline: none;
 }
+.subscription-input[type="email"]{
+  border-color: black;
+}
+.subscription-input[type="email"]:valid {
+  border-color: greenyellow;
+}
+.subscription-input[type="email"]:invalid {
+  border-color: red;
+}
 .subscription__button {
   width: 188px;
   height: 50px;
@@ -450,6 +461,37 @@ padding: 15px 47px;
 
 }
 
+
+/* MAP */
+.site-map {
+  padding-top: 100px;
+}
+.map-wrapper {
+  display: flex;
+}
+
+.map-form {
+  background-image: url(../img/form-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 166px;
+  padding-right: 375px;
+
+}
+.map-item {
+/* width: 375px; */
+}
+.map__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  color: var(--white);
+  }
+  .map__text {
+    line-height: 20px;
+    color: var(--hero-text);
+    width: 334px;
+  }
 .input__wrapper {
   display: flex;
   flex-direction: column;
@@ -460,22 +502,26 @@ padding: 15px 47px;
   padding: 10px;
   border: 1px solid #ccc;
   outline: none;
+  width: 375px;
 }
 .submit__button {
-  padding: 11px 22px;
-  background-color: white;
-  color: #000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #FFBD54;
+  color: var(--white);
   border: 1px solid #ccc;
-  font-weight: bolt;
+  font-weight: 500;
+  width: 226px;
+
 }
-input[type="email"]{
-  border-color: black;
+.submit__button:hover {
+  opacity: 0.8 ;
+  transition: 0.3 ease;
 }
-input[type="email"]:valid {
-  border-color: greenyellow;
+.submit__button:active {
+  opacity: 0.6 ;
+  transition: 0.3 ease;
 }
-input[type="email"]:invalid {
-  border-color: red;
-}
+
 
 

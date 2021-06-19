@@ -132,20 +132,32 @@
      </section>
 
 
-      <div class="container">
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <div class="input__wrapper">
-            <input class="input" type="text" name="name" aria-label="Name" placeholder="Name" required>
+      <section class="site-map">
+        <div class="container">
+          <div class="map-wrapper">
+            <div class="map">
+              <div style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/org/najot_talim/203287967764/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Najot Talim</a><a href="https://yandex.com/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Educational center in Tashkent</a><iframe src="https://yandex.com/map-widget/v1/-/CCUeIDGzoA" width="462" height="652" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+            <div class="map-form">
+
+              <h2 class="map__heading">Обратная связь</h2>
+              <p class="map__text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+              <form class="map-item" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="input__wrapper">
+                  <input class="input" type="text" name="name" aria-label="Name" placeholder="Ваше имя" required>
+                </div>
+                <div class="input__wrapper">
+                  <input class="input" type="email" name="email" aria-label="Email" placeholder="Email для обратной связи" required>
+                </div>
+                <div class="input__wrapper">
+                  <textarea class="input" name="textarea" placeholder="Опишите Ваш вопрос." cols="22" rows="10"></textarea>
+                </div>
+                <button class="submit__button" type="submit">Задать нам вопрос</button>
+              </form>
+            </div>
           </div>
-          <div class="input__wrapper">
-            <input class="input" type="email" name="email" aria-label="Email" placeholder="Email" required>
-          </div>
-          <div class="input__wrapper">
-            <textarea class="input" name="" id="" cols="22" rows="10"></textarea>
-          </div>
-          <button class="submit__button" type="submit">Jo'natish</button>
-        </form>
-      </div>
+        </div>
+      </section>
 
 
 
