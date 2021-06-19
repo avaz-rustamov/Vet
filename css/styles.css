@@ -41,6 +41,7 @@
   --dot-yellow: #FFBD54;
   --hero-headeing-blue: #78C0DE;
   --hero-text: #949494;
+  --nav-hover: #F4FFAD;
 }
 
 html {
@@ -93,7 +94,7 @@ body {
 
 }
 .address__item {
-  padding-left: 15px;
+  /* padding-left: 15px; */
   display: flex;
   align-items: center;
 
@@ -106,6 +107,9 @@ body {
 .address_text {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
 }
 .home::before {
   content: "";
@@ -123,10 +127,21 @@ body {
   background-image: url(../img/address-phone-img.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 10px;
+  padding: 9px;
   width: 13px;
   height: 13px;
-  left: 12px;
+  /* left: 12px; */
+  margin-right: 9px;
+}
+.calendar::before {
+  content: "";
+  background-image: url(../img/address-calendar-img.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 9px;
+  width: 14px;
+  height: 14px;
+  /* left: 12px; */
   margin-right: 9px;
 }
 .dot::before {
@@ -136,15 +151,14 @@ body {
   background-size: contain;
   padding: 4px;
   margin-top: 3px;
-  /* width: 4px; */
-  /* height: 4px; */
-  left: 4px;
-  margin-right: 9px;
+
 }
 .address__phone {
   text-decoration: none;
   color: var(--black);
   margin-right: 22px;
+  font-size: 14px;
+  line-height: 18px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -160,17 +174,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .logo {
   position: absolute;
-
-  transform: translateY(-50%);
+  transform: translateY(-22%);
   left: 1%;
   top: 0;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
 }
 
 .sitenav {
   margin-right: auto;
+  margin-left: auto;
 }
 .sitenav__list {
   display: flex;
@@ -181,14 +203,38 @@ body {
   list-style: none;
 }
 .sitenav__list-item {
-  border: 3px solid transparent;
   margin-right: 30px;
-  padding-bottom: 27px;
-  padding-top: 32px;
+  position: relative;
+  z-index: 1;
+}
+.sitenav__list-item:active {
+  opacity: 0.6;
+}
+.sitenav__list-item::after {
+  content: "";
+  position: absolute;
+  background-color: var(--nav-hover);
+  height: 4px;
+  width: 100%;
+  bottom: 4px;
+  z-index: -1;
+}
+.active {
+  display: flex;
+}
+.active::before {
+  content: "";
+  background-image: url(../img/active.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 9px;
+  width: 14px;
+  height: 14px;
+  /* left: 12px; */
+  margin-right: 9px;
 }
 .sitenav__list-item:hover {
   margin-right: 30px;
-  border-bottom: 3px solid #333;
 }
 .sitenav__link {
   text-decoration: none;
