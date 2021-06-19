@@ -169,10 +169,11 @@ body {
 /* SITENAV */
 .sitenav-main {
 
-  position: relative;
+
   background-color: var(--white);
 }
 .sitenav-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +183,7 @@ body {
 .logo {
   position: absolute;
   transform: translateY(-22%);
-  left: 0;
+  left: -80px;
   top: 0;
 }
 .logo:hover {
@@ -288,7 +289,7 @@ body {
   background-image: url(../img/heero-bg-animals.svg), url(../img/hero-bg-parrot.svg);
   /* background-size: cover,cover; */
   background-repeat: no-repeat;
-  background-position: calc(50% - 185px), calc(50% + 73px) -85px;
+  background-position: calc(50% - 80px) -185px, calc(50% + 73px) -85px;
   display: block;
   padding-top: 153px;
   padding-bottom: 530px;
