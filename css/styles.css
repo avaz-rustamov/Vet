@@ -33,7 +33,15 @@
   font-style: normal;
   font-display: swap;
 }
-
+:root {
+  --address-bg:#F9F8F8;
+  --white: #fff;
+  --site-bg: #E5E5E5;
+  --black: #333333;
+  --dot-yellow: #FFBD54;
+  --hero-headeing-blue: #78C0DE;
+  --hero-text: #949494;
+}
 
 html {
   box-sizing: border-box;
@@ -47,16 +55,220 @@ html {
 
 
 body {
-  font-family: "Futura PT";
-  font-weight: 500;
+  font-family: "Futura PT", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: var(--site-bg);
+  margin: 0;
+  z-index: -99;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1260px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.site_header {
+  position: relative;
+}
+
+/* SITE HEADER ADDRESS */
+.address-header {
+  color: var(--black);
+  margin-top: 11px;
+  margin-bottom: 9px;
+}
+.address__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 110px;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+.address__item {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+
+
+}
+.address__item:last-child {
+  display: flex;
+  align-items: center;
+}
+.address_text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.home::before {
+  content: "";
+  background-image: url(../img/address-home-img.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  width: 14px;
+  height: 13px;
+  left: 12px;
+  margin-right: 9px;
+}
+.phone::before {
+  content: "";
+  background-image: url(../img/address-phone-img.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  width: 13px;
+  height: 13px;
+  left: 12px;
+  margin-right: 9px;
+}
+.dot::before {
+  content: "";
+  background-image: url(../img/address-dot-img.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 4px;
+  margin-top: 3px;
+  /* width: 4px; */
+  /* height: 4px; */
+  left: 4px;
+  margin-right: 9px;
+}
+.address__phone {
+  text-decoration: none;
+  color: var(--black);
+  margin-right: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* SITENAV */
+.sitenav-main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--white);
+
+}
+.logo {
+  position: absolute;
+
+  transform: translateY(-50%);
+  left: 1%;
+  top: 0;
+}
+
+.sitenav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sitenav__list-item {
+  border: 3px solid transparent;
+  margin-right: 30px;
+  padding-bottom: 27px;
+  padding-top: 32px;
+}
+.sitenav__list-item:hover {
+  margin-right: 30px;
+  border-bottom: 3px solid #333;
+}
+.sitenav__link {
+  text-decoration: none;
+  color: var(--black);
+}
+.sitenav__link:hover {
+  color: #2D314D;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  text-decoration: none;
+}
+.header__link::before {
+  content: "";
+  background-image: url(../img/header-link-hand.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  width: 23px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+
+.main {
+  background-color: var(--site-bg);
+  z-index: -1;
+}
+
+
+/* HERO */
+.hero {
+
+  background-image: url(../img/heero-bg-animals.svg), url(../img/hero-bg-parrot.svg);
+  background-size: cover,cover;
+  background-repeat: no-repeat;
+  background-position: calc(50% - 100px), calc(50% + 73px) -85px;
+  display: block;
+  padding-top: 153px;
+  padding-bottom: 230px;
+  z-index: 99;
+
+}
+.hero-content {
+  width: 610px;
+  margin-left: auto;
+}
+.hero__heading {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 29px;
+  }
+.hero__headingblue {
+  color: var(--hero-headeing-blue);
+}
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 38px;
+  color: var(--hero-text);
+  line-height: 21px;
+  width: 500px;
+}
+.hero__link {
+padding: 15px 47px;
+}
+.button-link {
+  color: var(--white);
+  background-color: var(--black);
+  text-decoration: none;
+  border-radius: 3px;
+}
+.button-link:hover {
+  opacity: 0.8;
+}
+.button-link:active {
+  opacity: 0.6;
+}
+
+
+
 .input__wrapper {
   display: flex;
   flex-direction: column;

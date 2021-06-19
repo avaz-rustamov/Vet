@@ -12,28 +12,99 @@
 <body>
 <!-- HEADER -->
   <header class="site_header">
+    <div class="container">
+      <address class="address-header">
+        <ul class="address__list">
+          <li class="address__item  home">
+            <p class="address_text">
+              г. Мариуполь, проспект Победы, 48а
+            </p>
+          </li>
+          <li class="address__item phone">
+            <p class="address_text">
+              <a class="address__phone" href="tel:0676347547">(067) 634 -75 - 74</a>
+              <a class="address__phone dot" href="tel:0637570131">(0637) 57 - 01 - 31</a>
+              <a class="address__phone dot" href="tel:0892664389">(098) 266 - 43 - 89</a>
+            </p>
+          </li>
+          <li class="address__item">
+            <p class="address_text">
+              Пн - Пт 8:00 - 18:00
+            </p>
+            <p class="address_text">
+              Сб - Вс 8:00 - 14:00
+            </p>
+          </li>
+        </ul>
+      </address>
+    </div>
 
+    <!-- SITE NAV -->
+    <section class="sitenav-main">
+      <div class="container">
+        <img class="logo" src="img/logo.svg" alt="" width="177" height="86">
+
+              <!-- SITENAV -->
+             <nav class="sitenav">
+                <ul class="sitenav__list">
+                  <li class="sitenav__list-item">
+                    <a class="sitenav__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="sitenav__list-item">
+                    <a class="sitenav__link" href="index.html">О Клинике</a>
+                  </li>
+                  <li class="sitenav__list-item">
+                    <a class="sitenav__link" href="index.html">Наши Услуги</a>
+                  </li>
+                  <li class="sitenav__list-item">
+                    <a class="sitenav__link" href="index.html">Полезные Статьи</a>
+                  </li>
+                  <li class="sitenav__list-item">
+                    <a class="sitenav__link" href="index.html">FAQ</a>
+                  </li>
+                  <li class="sitenav__list-item">
+                    <a class="sitenav__link" href="index.html">Контакты</a>
+                  </li>
+                </ul>
+             </nav>
+
+             <div class="link-wrapper">
+               <a href="#" class="header__link">Задать вопрос
+               </a>
+            </div>
+      </div>
+    </section>
   </header>
 
 <!-- MAIN -->
   <main class="main">
-    <form action="https://echo.htmlacademy.ru" method="POST">
-      <div class="input__wrapper">
-        <input class="input" type="text" name="name" aria-label="Name" placeholder="Name" required>
+    <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+          <h1 class="hero__heading">
+            Мы заботимся о <span class="hero__headingblue">ваших питомцах!</span>
+          </h1>
+          <p class="hero__text">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему любимцу.</p>
+          <a class="hero__link button-link" href="#">Наши услуги</a>
+        </div>
       </div>
+      </section>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div class="input__wrapper">
+          <input class="input" type="text" name="name" aria-label="Name" placeholder="Name" required>
+        </div>
+        <div class="input__wrapper">
+          <input class="input" type="email" name="email" aria-label="Email" placeholder="Email" required>
+        </div>
+        <div class="input__wrapper">
+          <textarea class="input" name="" id="" cols="22" rows="10"></textarea>
+        </div>
+        <button class="submit__button" type="submit">Jo'natish</button>
+      </form>
 
-      <div class="input__wrapper">
-        <input class="input" type="email" name="email" aria-label="Email" placeholder="Email" required>
-      </div>
-
-      <div class="input__wrapper">
-        <textarea class="input" name="" id="" cols="22" rows="10"></textarea>
-      </div>
-      <button class="submit__button" type="submit">Jo'natish</button>
-    </form>
 
 
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit animi, repellendus iste, cumque beatae nobis nihil maiores, totam ullam facilis esse a alias adipisci error tempora eos deleniti fugit porro.
+
   </main>
 
 
