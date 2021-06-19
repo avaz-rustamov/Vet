@@ -57,12 +57,14 @@ html {
 
 body {
   font-family: "Futura PT", "Arial", sans-serif;
+  background-image: url(../img/Home_page.png);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   background-color: var(--site-bg);
   margin: 0;
   z-index: -99;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1260px;
@@ -180,7 +182,7 @@ body {
 .logo {
   position: absolute;
   transform: translateY(-22%);
-  left: 1%;
+  left: 0;
   top: 0;
 }
 .logo:hover {
@@ -210,6 +212,13 @@ body {
 .sitenav__list-item:active {
   opacity: 0.6;
 }
+.link {
+  position: relative;
+  z-index: 5;
+}
+.link:active {
+  opacity: 0.6;
+}
 .sitenav__list-item::after {
   content: "";
   position: absolute;
@@ -218,7 +227,13 @@ body {
   width: 100%;
   bottom: 4px;
   z-index: -1;
+  opacity: 0;
 }
+
+.sitenav__list-item:hover::after{
+  opacity: 1;
+}
+
 .active {
   display: flex;
 }
@@ -230,7 +245,6 @@ body {
   padding: 9px;
   width: 14px;
   height: 14px;
-  /* left: 12px; */
   margin-right: 9px;
 }
 .sitenav__list-item:hover {
@@ -277,7 +291,7 @@ body {
   background-position: calc(50% - 185px), calc(50% + 73px) -85px;
   display: block;
   padding-top: 153px;
-  padding-bottom: 230px;
+  padding-bottom: 530px;
   z-index: 99;
 
 }
@@ -318,7 +332,73 @@ padding: 15px 47px;
 .button-link:active {
   opacity: 0.6;
 }
+.quote {
+  position: relative;
 
+}
+
+/* BLOCKQUOTE */
+.quote::before {
+  content: "";
+  background-color:#DBDBDB;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  display: block;
+  height: 1px;
+  margin-bottom: 43px;
+
+}
+.quote::after {
+  margin-top: 43px;
+  content: "";
+  background-color:#DBDBDB;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  display: block;
+  height: 1px;
+
+}
+.blockquote {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 753px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--hero-text);
+}
+.blockquote::after {
+  content: "";
+  background-image: url(../img/q-right.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 142px;
+  height: 128px;
+  background-position: calc(70% );
+}
+.blockquote::before {
+  content: "";
+  background-image: url(../img/q.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 142px;
+  height: 128px;
+  background-position: calc(70% ) 1px;
+}
+.quote__person {
+  width: 357px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 35px;
+  color: var(--black);
+  font-size: 20px;
+  line-height: 26px;
+}
 
 
 .input__wrapper {
