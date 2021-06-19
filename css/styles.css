@@ -401,6 +401,55 @@ padding: 15px 47px;
 }
 
 
+/* subscription */
+
+.site-subscription {
+  background-image: url(../img/sub-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 88px;
+
+}
+.subscription {
+  position: relative;
+
+}
+.subscription__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  color: var(--white);
+}
+.subscription-form {
+  display: flex;
+}
+.subscription-form::after {
+  content: "";
+  background-image: url(../img/sub-dog.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 620px;
+  height: 480px;
+  position: absolute;
+  top: -189px;
+  right: 80px;
+
+}
+.subscription-input {
+  padding: 18px 147px 12px 22px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.subscription__button {
+  width: 188px;
+  height: 50px;
+  border-radius: 3px;
+  /* padding: 5px 22px; */
+  margin-left: 22px;
+
+}
+
 .input__wrapper {
   display: flex;
   flex-direction: column;
