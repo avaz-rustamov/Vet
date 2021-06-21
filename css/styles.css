@@ -67,7 +67,8 @@ body {
   overflow-x: hidden;
 }
 .container {
-  max-width: 1260px;
+  max-width: 1350px;
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -146,14 +147,17 @@ body {
   /* left: 12px; */
   margin-right: 9px;
 }
-.dot::before {
-  content: "";
-  background-image: url(../img/address-dot-img.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 4px;
-  margin-top: 3px;
 
+.dot{}
+.dot::before {
+  display: inline-flex;
+  align-self: center;
+   content: "";
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background-color:var(--dot-yellow);
+    margin-right: 9px;
 }
 .address__phone {
   text-decoration: none;
@@ -226,6 +230,7 @@ body {
   background-color: var(--nav-hover);
   height: 4px;
   width: 100%;
+  left: 0;
   bottom: 4px;
   z-index: -1;
   opacity: 0;
@@ -466,6 +471,7 @@ padding: 15px 47px;
 /* MAP */
 .site-map {
   padding-top: 100px;
+  padding-bottom: 245px;
 }
 .map-wrapper {
   display: flex;
@@ -479,9 +485,7 @@ padding: 15px 47px;
   padding-right: 375px;
 
 }
-.map-item {
-/* width: 375px; */
-}
+
 .map__heading {
   font-weight: 700;
   font-size: 48px;
@@ -524,5 +528,11 @@ padding: 15px 47px;
   transition: 0.3 ease;
 }
 
+
+  /* SITE FOOTER */
+.site-footer {
+  padding-top: 62px;
+  padding-bottom: 23px;
+ }
 
 
