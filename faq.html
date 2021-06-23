@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
-  <title>Vet</title>
+  <title>Vet services</title>
 </head>
 <body>
 <!-- HEADER -->
@@ -61,7 +61,7 @@
                       <a class="sitenav__link" href="index.html">Полезные Статьи</a>
                     </li>
                     <li class="sitenav__list-item">
-                      <a class="sitenav__link" href="faq.html">FAQ</a>
+                      <a class="sitenav__link" href="index.html">FAQ</a>
                     </li>
                     <li class="sitenav__list-item">
                       <a class="sitenav__link" href="index.html">Контакты</a>
@@ -78,94 +78,52 @@
     </div>
   </header>
 
-<!-- MAIN -->
-  <main class="main">
-    <section class="hero">
-    <div class="container">
-        <div class="hero-content">
-          <h1 class="hero__heading">
-            Мы заботимся о <span class="hero__headingblue">ваших питомцах!</span>
-          </h1>
-          <p class="hero__text">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему любимцу.</p>
-          <a class="hero__link button-link" href="#">Наши услуги</a>
-        </div>
-      </div>
-      </section>
-
-      <div class="quote">
-        <blockquote class="blockquote">
-          Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.
-        </blockquote>
-
-
-      </div>
-      <p class="quote__person">Оржоникидзевская Ветеринарная клиника</p>
-
-<!--
-      SERVISES
-      <section class="site-services">
-        <div class="container">
-          <h class="services__headeing">Наши услуги</h>
-          <ul class="services__list">
-            <li class="services__item">
-
-            </li>
-          </ul>
-        </div>
-      </section> -->
-
-
-     <section class="site-subscription">
+  <main>
+    <section class="faq-hero">
       <div class="container">
-        <div class="subscription">
-          <h3 class="subscription__heading">
-            Будь в курсе событий
-          </h3>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="input__wrapper">
-              <input class="subscription-input" type="email" name="email" aria-label="Email" placeholder="Укажите Ваш email адрес" required>
-            </div>
-            <button class="subscription__button button-link" type="submit">Подписаться</button>
-          </form>
+        <div class="faq">
+             <h1 class="faq__heading">О клинике</h1>
+             <p class="faq__text">Собака, кошка, попугай, шиншилла… Сколько радости и тепла приносят эти весёлые друзья в наш дом.  </p>
         </div>
       </div>
-     </section>
+    </section>
 
 
-      <section class="site-map">
-        <div class="container">
-          <div class="map-wrapper">
-            <div class="map">
-              <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.com/map-widget/v1/-/CCUeIDGzoA" width="462" height="652"  style="position:relative;"></iframe></div>
-            </div>
-            <div class="map-form">
-
-              <h2 class="map__heading">Обратная связь</h2>
-              <p class="map__text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
-              <form class="map-item" action="https://echo.htmlacademy.ru" method="POST">
-                <div class="input__wrapper">
-                  <input class="input" type="text" name="name" aria-label="Name" placeholder="Ваше имя" required>
-                </div>
-                <div class="input__wrapper">
-                  <input class="input" type="email" name="email" aria-label="Email" placeholder="Email для обратной связи" required>
-                </div>
-                <div class="input__wrapper">
-                  <textarea class="input" name="textarea" placeholder="Опишите Ваш вопрос." cols="22" rows="10"></textarea>
-                </div>
-                <button class="submit__button" type="submit">Задать нам вопрос</button>
-              </form>
+    <section class="site-modal">
+      <div class="container">
+        <div class="modal-wrapper">
+          <div class="modal-content">
+            <p class="modal-content__text">Авторизация:</p>
+            <div class="modal-link__wrapper">
+              <a class="modal-content__link" href="https://www.google.com/">
+                Войти через Google</a>
+              <a class="modal-content__link modal__facebook" href="https://www.google.com/">
+                Войти через Facebook
+              </a>
             </div>
           </div>
+          <div class="modal-form">
+            <h2 class="faq__heading">Обратная связь</h2>
+            <form class="form-item" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="input__wrapper">
+                <input class="input" type="text" name="name" aria-label="Name" placeholder="Ваше имя" required>
+              </div>
+              <div class="input__wrapper">
+                <input class="input" type="email" name="email" aria-label="Email" placeholder="Email для обратной связи" required>
+              </div>
+              <div class="input__wrapper">
+                <textarea class="input" name="textarea" placeholder="Опишите Ваш вопрос." cols="22" rows="10"></textarea>
+              </div>
+              <button class="button__faq button-link " type="submit">Задать нам вопрос</button>
+            </form>
+          </div>
         </div>
-      </section>
-
-
-
-
+      </div>
+    </section>
   </main>
 
 
-<!-- FOOTER -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
         <section class="footer">
@@ -198,4 +156,4 @@
       </div>
   </footer>
 </body>
-</html>
+</html>f
