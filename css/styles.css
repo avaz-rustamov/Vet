@@ -331,6 +331,8 @@ padding: 15px 47px;
   background-color: var(--black);
   text-decoration: none;
   border-radius: 3px;
+  border: none;
+
 }
 .button-link:hover {
   opacity: 0.8;
@@ -689,6 +691,8 @@ padding: 15px 47px;
   border: 1px solid #ccc;
   font-weight: 500;
   width: 226px;
+  border: none;
+
 }
 .faq__heading {
   font-weight: 700;
@@ -700,6 +704,7 @@ padding: 15px 47px;
 
 /* SITE MODAL */
 .site-modal {
+  display: none;
   background-image: url(../img/modal-bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -709,6 +714,9 @@ padding: 15px 47px;
   padding-bottom: 137px;
   padding-left: 70px;
   padding-right: 70px;
+}
+.site-modal--open {
+  display: block;
 }
 .modal-content {
   padding-top: 22px;
