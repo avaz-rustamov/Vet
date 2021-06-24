@@ -3,5 +3,5 @@ var  elModalOpen = document.querySelector('.site-modal');
 
 
 elModalButton.addEventListener('click', function() {
-  elModalOpen.classList.add('site-modal--open');
+  elModalOpen.classList.toggle('site-modal--open');
 });
