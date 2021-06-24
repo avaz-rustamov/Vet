@@ -704,6 +704,8 @@ padding: 15px 47px;
 
 /* SITE MODAL */
 .site-modal {
+  position: relative;
+
   display: none;
   background-image: url(../img/modal-bg-img.png);
   background-repeat: no-repeat;
@@ -718,6 +720,12 @@ padding: 15px 47px;
   margin-left: auto;
   margin-right: auto;
 
+}
+.mogal-bg-color--active {
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: red;
+  width: 100%;
+  height: 100%;
 }
 .site-modal--open {
   display: block;
@@ -742,6 +750,14 @@ padding: 15px 47px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.modal__button--close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  cursor: pointer;
 }
 .modal-content__link {
   display: flex;
